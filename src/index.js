@@ -18,3 +18,5 @@ app.use(require('./routes/rutas'))
 //empezando el servidor
 app.listen(app.get('port'));
 console.log("mi primer servidor");
+
+//data base
