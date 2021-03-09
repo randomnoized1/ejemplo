@@ -5,7 +5,11 @@ const router = Router();
 
 //rutas
 router.get('/', (req,res) =>{
-    res.json({"name": "John Doe"});
+    const data ={
+        "name": "John Doe",
+        "id": "1234"
+    }
+    res.json(data);
 });
 
 module.exports = router;

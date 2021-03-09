@@ -4,6 +4,7 @@ const morgan = require('morgan');
 
 //configuraciones
 app.set('port', 3000)
+app.set('json spaces',2);
 
 
 //middlewares
@@ -12,7 +13,7 @@ app.use(express.json());
 
 
 //rutas
-app.use(require('./routes/rutas'))
+app.use('/api/juegos',require('./routes/rutas'))
 
 
 //empezando el servidor
